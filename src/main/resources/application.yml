@@ -1,0 +1,42 @@
+server:
+  port: 8081
+  shutdown: graceful
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+  redis:
+    use-cluster: false
+    max-redirect: 10
+    refresh-period-millis: 5000
+    nodes:
+      - 127.0.0.1:6379
+      - 127.0.0.1:6380
+      - 127.0.0.1:6381
+    command-timeout-millis: 3000
+    socket-timeout-millis: 3000
+    host: localhost
+    port: 6379
+    password:
+    database: 0
+  profiles:
+    active: local
+
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    display-request-duration: true
+    groups-order: DESC
+    operationsSorter: method
+    disable-swagger-default-url: true
+    use-root-path: true
+    title: Example API
+    description: Example API
+    version: 0.1.0
+  show-actuator: true
+  group-configs:
+    - group: market
+      paths-to-match: /market/**

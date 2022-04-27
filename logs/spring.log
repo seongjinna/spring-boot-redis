@@ -1,0 +1,43 @@
+INFO  2022-04-27 09:45:17[main] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode!
+INFO  2022-04-27 09:45:17[main] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  2022-04-27 09:45:17[main] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+INFO  2022-04-27 09:45:18[main] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode!
+INFO  2022-04-27 09:45:18[main] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  2022-04-27 09:45:18[main] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 86 ms. Found 2 Redis repository interfaces.
+INFO  2022-04-27 09:45:18[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8081 (http)
+INFO  2022-04-27 09:45:18[main] [StandardService:173] - Starting service [Tomcat]
+INFO  2022-04-27 09:45:18[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  2022-04-27 09:45:18[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  2022-04-27 09:45:18[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 968 ms
+INFO  2022-04-27 09:45:19[main] [StdSchedulerFactory:1220] - Using default implementation for ThreadExecutor
+INFO  2022-04-27 09:45:19[main] [SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  2022-04-27 09:45:19[main] [QuartzScheduler:229] - Quartz Scheduler v.2.3.2 created.
+INFO  2022-04-27 09:45:19[main] [RAMJobStore:155] - RAMJobStore initialized.
+INFO  2022-04-27 09:45:19[main] [QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  2022-04-27 09:45:19[main] [StdSchedulerFactory:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+INFO  2022-04-27 09:45:19[main] [StdSchedulerFactory:1378] - Quartz scheduler version: 2.3.2
+INFO  2022-04-27 09:45:19[main] [QuartzScheduler:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@32a033b6
+INFO  2022-04-27 09:45:19[main] [EndpointLinksResolver:58] - Exposing 1 endpoint(s) beneath base path '/actuator'
+INFO  2022-04-27 09:45:19[main] [TomcatWebServer:220] - Tomcat started on port(s): 8081 (http) with context path ''
+INFO  2022-04-27 09:45:19[main] [SchedulerFactoryBean:729] - Starting Quartz Scheduler now
+INFO  2022-04-27 09:45:19[main] [QuartzScheduler:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+INFO  2022-04-27 16:02:55[http-nio-8081-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  2022-04-27 16:02:55[http-nio-8081-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  2022-04-27 16:02:55[http-nio-8081-exec-1] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  2022-04-27 18:07:02[RedisInstanceCleaner] [AbstractRedisInstance:92] - Stopping redis server...
+INFO  2022-04-27 18:07:02[SpringApplicationShutdownHook] [QuartzScheduler:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+INFO  2022-04-27 18:07:02[SpringApplicationShutdownHook] [GracefulShutdown:53] - Commencing graceful shutdown. Waiting for active requests to complete
+INFO  2022-04-27 18:07:02[tomcat-shutdown] [GracefulShutdown:78] - Graceful shutdown complete
+INFO  2022-04-27 18:07:02[SpringApplicationShutdownHook] [SchedulerFactoryBean:847] - Shutting down Quartz Scheduler
+INFO  2022-04-27 18:07:02[SpringApplicationShutdownHook] [QuartzScheduler:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+INFO  2022-04-27 18:07:02[SpringApplicationShutdownHook] [QuartzScheduler:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+INFO  2022-04-27 18:07:02[SpringApplicationShutdownHook] [QuartzScheduler:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+INFO  2022-04-27 18:07:02[RedisInstanceCleaner] [AbstractRedisInstance:99] - Redis exited
+WARN  2022-04-27 18:07:02[lettuce-timer-3-1] [ConnectionWatchdog:251] - Cannot execute scheduled reconnect timer, reconnect workers are terminated
