@@ -3,7 +3,7 @@
 - Quartz Scheduler 사용하기
 
 ## Getting Started
-- Java version : JDK 8
+- Java version : JDK 11
 - Spring Boot : 2.6.6
 
 ### Dependencies
